@@ -1,0 +1,29 @@
+{
+  "name": "grenache-grape-is-awesome",
+  "version": "0.0.0",
+  "description": "Fun with Grenache Grape implementation from bitfinex.com",
+  "engine": {
+    "node": ">=8.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amissine/GrenacheGrapeIsAwesome.git"
+  },
+  "keywords": [
+    "grenache",
+    "bitfinex",
+    "kademlia",
+    "nodejs",
+    "micro-services"
+  ],
+  "author": "Alec Missine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amissine/GrenacheGrapeIsAwesome/issues"
+  },
+  "homepage": "https://github.com/amissine/GrenacheGrapeIsAwesome#readme"
+}
