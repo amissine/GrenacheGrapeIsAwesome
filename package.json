@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/amissine/GrenacheGrapeIsAwesome/issues"
   },
-  "homepage": "https://github.com/amissine/GrenacheGrapeIsAwesome#readme"
+  "homepage": "https://github.com/amissine/GrenacheGrapeIsAwesome#readme",
+  "dependencies": {
+    "grenache-grape": "git+https://github.com/amissine/grenache-grape.git"
+  }
 }
