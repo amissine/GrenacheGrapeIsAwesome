@@ -105,7 +105,7 @@ g.start(() => {})
 try {
   const Example = require(`./../examples/${process.argv[2]}`)
 
-  new Example().run()
+  new Example()
 }
 catch (e) {
   console.error(e) // TODO: usage
