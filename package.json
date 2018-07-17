@@ -8,8 +8,7 @@
   "main": "index.js",
   "scripts": {
     "pull": "npm uninstall --no-save grenache-grape && npm install",
-    "start": "./bin/examples.js",
-    "test": "npm run lint && npm run unit"
+    "start": "./bin/examples.js"
   },
   "repository": {
     "type": "git",

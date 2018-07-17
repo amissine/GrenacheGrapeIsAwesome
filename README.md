@@ -11,4 +11,4 @@ To locate a peer, we need to locate its node. Let us take a look at an example o
 DEBUG='ggia:*,grenache:grape,bittorrent-dht' npm start example1
 ```
 
-It outputs the debug information from `example1` and from the modules in use - `grenache-grape` and `bittorrent-dht`. I saved the output into [this Google document](https://docs.google.com/document/d/1qqULcyuq26l3t1Gcs_9qCsxkYqQMqNBdX-A81Sz2bFY/edit).
+It outputs the debug information from `example1` and from the modules in use - `grenache-grape` and `bittorrent-dht`. I saved the output into [this Google document](https://docs.google.com/document/d/1qqULcyuq26l3t1Gcs_9qCsxkYqQMqNBdX-A81Sz2bFY/edit). The example demonstrates a simple way to create a Kademlia cloud of nodes and to grow it as needed. The first node in the cloud (the known node) does not bootstrap, since there are no more nodes to bootstrap to. The second and all subsequent nodes bootstrap to the known node. All they know before joining the cloud is the IP address and the port number of the known node. As they join the cloud, they learn about each other. It's fun to look at the output and see how this happens. Awesome!

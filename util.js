@@ -2,7 +2,7 @@
 
 const debug = require('debug')('ggia:util')
 const { Grape } = require('grenache-grape')
-const portbase = 20000
+const portbase = 20000, knownPort = portbase + 1
 var count = 0, grapes = []
 
 exports.addGrape = (onstart = (grapes, grape, stop) => {}) => {
@@ -21,7 +21,7 @@ function newGrape (cb, size = 0, onstart = (grapes, grape, stop) => {}) {
   grape = new Grape({
     host: '127.0.0.1',
     dht_port: portbase + count,
-    dht_bootstrap: count == 1 ? [] : [ '127.0.0.1:' + (portbase + count - 1) ],
+    dht_bootstrap: count == 1 ? [] : [ '127.0.0.1:' + knownPort ],
     api_port: portbase + 10000 + count
   })
   grapes.push(grape)
