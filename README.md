@@ -11,4 +11,4 @@ To locate a peer, we need to locate its node. Let us take a look at an example o
 DEBUG='ggia:*,grenache:grape,bittorrent-dht' npm start example1
 ```
 
-It outputs the debug information from `example1` and from the modules in use - `grenache-grape` and `bittorrent-dht`.
+It outputs the debug information from `example1` and from the modules in use - `grenache-grape` and `bittorrent-dht`. I saved the output into [this Google document](https://docs.google.com/document/d/1qqULcyuq26l3t1Gcs_9qCsxkYqQMqNBdX-A81Sz2bFY/edit).
