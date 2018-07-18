@@ -79,4 +79,10 @@ And then we clean up nicely after ourselves:
   ggia:example1 grape stopped +10s
 ```
 
-I have a running implementation of these two services here: [http://minetats.com](http://minetats.com). And now I am re-implementing both of them using the Awesome Grenache Grapes!
+I have a running implementation of these two services [here](http://minetats.com/). It has just become obsolete, and I am re-implementing my services using the Awesome Grenache Grapes!
+
+P.S. If my site is up, you will see something like this:
+
+![Your browser does not support image rendering](https://github.com/amissine/GrenacheGrapeIsAwesome/IMG_0459.PNG "Public trades on Bitfinex and Bitstamp")
+
+Don't be surprised if it's down, as it's just an old 32-bit Lenovo T500 behind a router. <a href='mailto:support@minetats.com'>Drop me a line</a>, and I'll restart it for you!
