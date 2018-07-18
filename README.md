@@ -37,7 +37,7 @@ It outputs the debug information from `example1` and from the modules in use - `
   ggia:example1 grape started on port 20003, stopping in 10000 ms +0ms
 ```
 
-When a node joins the Kademlia cloud, it sends the node lookup request to the node(s) it knows of. This is what the second and the third nodes are doing here:
+When a node joins the Kademlia cloud, it sends the node lookup request to the node(s) it knows of, effectively providing the nodes it contacts in the process with its own contact information. This is what the second and the third nodes are doing here:
 
 ```
   grenache:grape 20001 node +3ms
@@ -60,3 +60,23 @@ When a node joins the Kademlia cloud, it sends the node lookup request to the no
   bittorrent-dht [1cd666c] emit ready +1ms
   grenache:grape 20003 ready +0ms
 ```
+
+At this moment, each node in the cloud knows about two other nodes. Now is the good time to take a look at the code and see how the peer, that owns the first node, is announcing service `public:trade:bitfinex`. And the peer, that owns the second node, is announcing service `public:trade:bitstamp`. By the time the third node looks up for these services, both other nodes know about both services and provide the third node with the requested information:
+
+```
+  ggia:example1 [ '127.0.0.1:1337' ] +1ms
+  ggia:example1 [ '127.0.0.1:1337' ] +1ms
+  ggia:example1 [ '127.0.0.1:1338' ] +1ms
+  ggia:example1 [ '127.0.0.1:1338' ] +0ms
+```
+
+And then we clean up nicely after ourselves:
+
+```
+  bittorrent-dht [1cd666c] destroying +10s
+  bittorrent-dht [4123714] destroying +3ms
+  bittorrent-dht [aaede18] destroying +0ms
+  ggia:example1 grape stopped +10s
+```
+
+I have a running implementation of these two services here: [http://minetats.com](http://minetats.com). And now I am re-implementing both of them using the Awesome Grenache Grapes!
