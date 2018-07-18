@@ -61,7 +61,7 @@ When a node joins the Kademlia cloud, it sends the node lookup request, passing 
   grenache:grape 20003 ready +0ms
 ```
 
-At this moment, each node in the cloud knows about two other nodes. Now is the good time to take a look at the code and see how the peer, that owns the first node, is announcing service `public:trade:bitfinex`. And the peer, that owns the second node, is announcing service `public:trade:bitstamp`. By the time the third node looks up for these services, both other nodes know about both services and provide the third node with the requested information:
+At this moment, each node in the cloud knows about the two other nodes. Now is the good time to take a look at the code and see how the peer, that owns the first node, is announcing service `public:trade:bitfinex`. And the peer, that owns the second node, is announcing service `public:trade:bitstamp`. By the time the third node looks up for these services, both other nodes know about both services and provide the third node with the requested information:
 
 ```
   ggia:example1 [ '127.0.0.1:1337' ] +1ms
