@@ -83,6 +83,6 @@ I have a running implementation of these two services [here](http://minetats.com
 
 P.S. If my site is up, you will see something like this:
 
-![Your browser does not support image rendering](https://github.com/amissine/GrenacheGrapeIsAwesome/IMG_0459.PNG "Public trades on Bitfinex and Bitstamp")
+![Your browser does not support image rendering](https://github.com/amissine/GrenacheGrapeIsAwesome/blob/master/IMG_0459.PNG "Public trades on Bitfinex and Bitstamp")
 
 Don't be surprised if it's down, as it's just an old 32-bit Lenovo T500 behind a router. <a href='mailto:support@minetats.com'>Drop me a line</a>, and I'll restart it for you!
