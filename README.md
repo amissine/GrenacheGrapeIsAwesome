@@ -79,7 +79,7 @@ And then we clean up nicely after ourselves:
   ggia:example1 grape stopped +10s
 ```
 
-I have a running implementation of these two services [here](http://minetats.com/). It has just become obsolete, and I am re-implementing my services using the Awesome Grenache Grapes!
+I have a running implementation of these two services [here](http://73.244.212.210/). It has just become obsolete, and I am re-implementing my services using the Awesome Grenache Grapes!
 
 P.S. If my site is up, you will see something like this:
 
