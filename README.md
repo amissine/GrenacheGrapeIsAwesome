@@ -37,7 +37,7 @@ It outputs the debug information from `example1` and from the modules in use - `
   ggia:example1 grape started on port 20003, stopping in 10000 ms +0ms
 ```
 
-When a node joins the Kademlia cloud, it sends the node lookup request to the node(s) it knows of, effectively providing the nodes it contacts in the process with its own contact information. This is what the second and the third nodes are doing here:
+When a node joins the Kademlia cloud, it sends the node lookup request, passing its own ID  to the node(s) it knows of - effectively providing the nodes it contacts in the process with its own contact information. This is what the second and the third nodes are doing here:
 
 ```
   grenache:grape 20001 node +3ms
